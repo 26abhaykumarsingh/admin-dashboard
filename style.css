@@ -11,7 +11,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: .8fr 3fr 1fr;
-    grid-template-rows: 50px 100px 60px 1fr ;
+    grid-template-rows: 6% 12% 6% 1fr ;
     background-color: #020617;
 }
 
@@ -28,14 +28,13 @@
 .header input[type="search"]{
     appearance: none;
     position: relative;
-    top: -5px;
-    left: 800px;
-    height: 30px;
-    width: 550px;
-    border-radius: 50px;
+    left: 56.5%;
+    height: 60%;
+    width: 38%;
+    border-radius: 5rem;
     background-color: #97a0ac;
     font-size: 1.1rem;
-    padding-left: 20px;
+    padding-left: 1%;
 }
 
 .header input[type="search"]::-webkit-search-cancel-button {
@@ -48,13 +47,14 @@
 
 .header img{
     position: relative;
-    top: 10px;
-    left: 800px;
+    top: 25%;
+    left: 56.5%;
     display: inline-block;
-    height: 35px;
-    width: 35px;
+    height: 65%;
+    width: 2%;
     background-image: url(icons/magnify.svg);
     filter:invert(100%) sepia(0%) saturate(7456%) hue-rotate(75deg) brightness(109%) contrast(97%);
+    background-repeat: no-repeat;
 }
 
 
@@ -96,19 +96,18 @@
 }
 
 .nav .buttons{
-    padding-left: 100px;
-    padding-bottom: 7px;
+    padding-left: 20%;
 
     display: grid;
-    grid-template-columns: 150px 150px 150px;
+    grid-template-columns: 30% 30% 30%;
     align-items: end;
 }
 
 .nav button{
     color: white;
     font-size: 1rem;
-    height: 30px;
-    width: 130px;
+    height: 4vh;
+    width: 7vw;
     border-radius: 50px;
     background-color: #475569;
 }
@@ -130,16 +129,15 @@
     justify-content: left;
 
     display: grid;
-    grid-template-rows: repeat(auto-fill,minmax(50px,1fr));
-    gap: 10px;
+    grid-template-rows: repeat(auto-fill,minmax(5%,1fr));
+    gap: 1.7%;
 }
 
 .sidebar div{
-    margin-left: 30px;
-    height: 50px;
+    margin-left: 10%;
     font-size: 1.05rem;
     display: grid;
-    grid-template-columns: 50px;
+    grid-template-columns: 30%;
     grid-auto-flow: column;
     align-items: center;
     justify-items: left;
@@ -148,15 +146,15 @@
 .sidebar .dashboardheading{
 
     grid-row: 1/3;
-    height: 100px;
+    height: 60%;
     font-size: 1.7rem;
     grid-auto-flow: column;
 }
 
 .sidebar img{
     filter:invert(100%) sepia(0%) saturate(7456%) hue-rotate(75deg) brightness(109%) contrast(97%);
-    height: 40px;
-    width: 40px;
+    height: 70%;
+    width: 70%;
 }
 
 
@@ -165,8 +163,8 @@
 
 
 .contentlabel{
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 2.5%;
+    padding-top: 2%;
     color: aliceblue;
     background-color: #353c4e;
     grid-row: 3/4;
@@ -179,13 +177,14 @@
     grid-column: 2/3;
     background-color: #353c4e;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(30vw,1fr));
     grid-auto-flow: row;
-    grid-auto-rows: 270px;
+    grid-auto-rows: 30vh;
 
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    padding-top: .2%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 1.5%;
 
     justify-items: center;
     align-items: center;
@@ -195,7 +194,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     border-radius: 0 0 20px 20px;
 }
 
@@ -213,8 +212,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20% 1fr 20%;
-    padding: 15px;
+    padding: 3%;
 
+    box-shadow: 0px 10px 10px #353537;
     position: relative;
     top: 0px;
     transition: all 0.3s ease-out;
@@ -222,8 +222,8 @@
 .content .project:hover{
     background-color: white;
     position: relative;
-    top: -5px;
-    box-shadow: 0px 0px 10px 3px #94a3b8;
+    top: -2%;
+    box-shadow: 0px 0px 10px 3px #677181;
     
 }
 
@@ -238,9 +238,9 @@
     justify-content: end;
 }
 .project img{
-    height: 30px;
-    width: 30px;
-    margin: 5px;
+    height: 90%;
+    width: 90%;
+    margin: 30%;
 }
 
 
@@ -254,14 +254,7 @@
     background-color: #020617;
 
     display: grid;
-    grid-template-rows: 60px 34vh 60px 33vh;
-}
-
-.anouncements ,.trending{
-    background-color: #97a0ac;
-    border-radius: 20px;
-    margin-left: 30px;
-    width: 80%;
+    grid-template-rows: 7vh 33vh 7vh 32vh;
 }
 
 .label{
@@ -272,7 +265,12 @@
 }
 
 .anouncements,  .trending{
-    padding: 10px;
+    background-color: #97a0ac;
+    border-radius: 20px;
+    margin-left: 8%;
+    width: 80%;
+
+    padding: 2.5%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-auto-flow: row;
@@ -286,6 +284,6 @@
     height: 90%;
     width: 98%;
     border-radius: 10px;
-    padding: 10px;
-    font-size: .9rem;
+    padding: 4%;
+    font-size: .8rem;
 }
